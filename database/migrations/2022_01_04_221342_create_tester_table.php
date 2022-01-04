@@ -16,8 +16,8 @@ class CreateTesterTable extends Migration
         Schema::create('tester', function (Blueprint $table) {
             $table->id();
             $table->timestamps();
-            $table->Name();
-            $table->Password();
+            $table->string('name');
+            $table->string('password');
         });
     }
 
