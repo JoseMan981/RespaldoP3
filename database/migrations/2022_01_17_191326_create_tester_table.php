@@ -17,11 +17,13 @@ class CreateTesterTable extends Migration
             $table->id();
             $table->timestamps();
             $table->string('name');
+            
         });
 
         DB::table("tester")
             ->insert([
-                "name" => "Mostrador",
+                ["name" =>"Jose Manuel"],
+                ["name" =>"Pablo"]
             ]);
     }
 
