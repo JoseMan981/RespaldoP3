@@ -13,7 +13,7 @@ class CreateUsersTable extends Migration
      */
     public function up()
     {
-        Schema::create('users', function (Blueprint $table) {
+        /*Schema::create('users', function (Blueprint $table) {
             $table->bigIncrements('Userid');
             $table->timestamps();
             $table->string('First_Name');
@@ -28,7 +28,7 @@ class CreateUsersTable extends Migration
             $table->string('Salesforce_id');
             $table->string('AMBT_Id');
             $table->Integer('Created_By');
-        });
+        });*/
     }
 
     /**
@@ -38,6 +38,6 @@ class CreateUsersTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('users');
+        Schema::drop('users');
     }
 }
