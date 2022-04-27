@@ -10,4 +10,8 @@ class Controlleruser extends Controller
     {
         //return response($request)->json();
     }
+    public function test1(Request $var = null)
+    {
+        return response()->json($data, 200, $headers);
+    }
 }
